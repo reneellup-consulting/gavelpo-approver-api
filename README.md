@@ -1,21 +1,21 @@
-# Gavel PO Approver API (Aprvel)
+# Gavel Mobile PO Approver API
 
-This repository contains the backend REST API for **Aprvel**, the mobile purchase order (PO) approval platform for GS Gavel Logistics. It securely handles user authentication, approval workflows, and provides real-time data to the mobile application regarding outstanding and historical purchase orders.
+This repository contains the backend REST API for the Gavel Mobile Purchase Order (PO) Approval application. It securely handles user authentication, approval workflows, and provides data to the mobile application regarding outstanding and historical purchase orders.
 
 ## Architecture
 
 The solution is built using **Clean Architecture** principles and the **CQRS** (Command Query Responsibility Segregation) pattern to ensure maintainability, scalability, and loose coupling.
 
-The repository is divided into the following projects:
+The repository is divided into the following core projects:
 
 * **`GavelMobilePoApprover.Api` (Presentation Layer)**
     * The entry point of the application.
-    * Contains REST API Controllers (`AuthenticationController`, `CountController`, `PurchaseOrderEditableController`, etc.).
+    * Contains REST API Controllers (`AuthenticationController`, `CountController`, `PurchaseOrderEditableController`, `PurchaseOrderHistoryController`, etc.).
     * Handles HTTP requests/responses, dependency injection setup, global error handling via ProblemDetails, and object mapping configurations.
 * **`GavelMobilePoApprover.Application` (Application Layer)**
     * Contains the core business logic and use cases.
     * Implements CQRS using **MediatR** (e.g., `LoginQuery`, `OutstandingCountQuery`).
-    * Defines interfaces for infrastructure implementations (e.g., `IJwtTokenGenerator`, `IUserRepository`).
+    * Defines interfaces for infrastructure implementations (e.g., `IJwtTokenGenerator`, `IUserRepository`, `IOutstandingCountRepository`).
     * Includes request validation pipelines using FluentValidation behaviors.
 * **`GavelMobilePoApprover.Domain` (Domain Layer)**
     * The core of the system containing enterprise logic and entities.
@@ -33,15 +33,15 @@ The repository is divided into the following projects:
 
 * **Framework:** .NET (C#)
 * **Architecture:** Clean Architecture, CQRS
-* **Libraries:** MediatR, Entity Framework Core
+* **Libraries:** MediatR, Entity Framework Core, FluentValidation
 * **Security:** JWT (JSON Web Tokens) Authentication
 
 ## Getting Started
 
 ### Prerequisites
 
-* [.NET SDK](https://dotnet.microsoft.com/download) (Version matching the project target, likely .NET 6.0 or 7.0+)
-* SQL Server (or the configured database provider)
+* [.NET SDK](https://dotnet.microsoft.com/download)
+* SQL Server (or your configured database provider)
 
 ### Setup & Configuration
 
@@ -57,8 +57,8 @@ The repository is divided into the following projects:
     "JwtSettings": {
       "Secret": "your-super-secret-key",
       "ExpiryMinutes": 60,
-      "Issuer": "aprvel-api",
-      "Audience": "aprvel-client"
+      "Issuer": "gavel-po-api",
+      "Audience": "gavel-po-client"
     }
     ```
 
@@ -73,4 +73,3 @@ The repository is divided into the following projects:
     cd GavelMobilePoApprover.Api
     dotnet run
     ```
-    The API will be available at the configured localhost port (e.g., `https://localhost:5001`).
