@@ -1,0 +1,21 @@
+﻿<Project Sdk="Microsoft.NET.Sdk.Web">
+
+  <PropertyGroup>
+    <TargetFramework>net7.0</TargetFramework>
+    <Nullable>enable</Nullable>
+    <ImplicitUsings>enable</ImplicitUsings>
+    <UserSecretsId>86d318a1-991e-4715-a00c-d4f400bff86c</UserSecretsId>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <PackageReference Include="Mapster" Version="7.3.0" />
+    <PackageReference Include="Mapster.DependencyInjection" Version="1.0.0" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <ProjectReference Include="..\GavelMobilePoApprover.Application\GavelMobilePoApprover.Application.csproj" />
+    <ProjectReference Include="..\GavelMobilePoApprover.Contracts\GavelMobilePoApprover.Contracts.csproj" />
+    <ProjectReference Include="..\GavelMobilePoApprover.Infrastructure\GavelMobilePoApprover.Infrastructure.csproj" />
+  </ItemGroup>
+
+</Project>

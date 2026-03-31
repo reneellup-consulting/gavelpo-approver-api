@@ -1,0 +1,54 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 17
+VisualStudioVersion = 17.5.33516.290
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "GavelMobilePoApprover.Api", "GavelMobilePoApprover.Api\GavelMobilePoApprover.Api.csproj", "{BC879CA9-FA9E-4FD9-98AB-7DE111DDED21}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "GavelMobilePoApprover.Application", "GavelMobilePoApprover.Application\GavelMobilePoApprover.Application.csproj", "{858333B6-49DA-4C43-AE2F-1A2F74E633FA}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "GavelMobilePoApprover.Contracts", "GavelMobilePoApprover.Contracts\GavelMobilePoApprover.Contracts.csproj", "{CFD0E10D-AAC2-48C1-A16A-FA56A020C2D2}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "GavelMobilePoApprover.Domain", "GavelMobilePoApprover.Domain\GavelMobilePoApprover.Domain.csproj", "{E5018EE1-D5F8-4569-898B-B7E5A26953E5}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "GavelMobilePoApprover.Infrastructure", "GavelMobilePoApprover.Infrastructure\GavelMobilePoApprover.Infrastructure.csproj", "{9F03DC5B-7B20-4A0B-BCE6-E2D09DA4846B}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Docs", "Docs", "{35077B8D-8138-49E7-859A-33F470A7AF6D}"
+	ProjectSection(SolutionItems) = preProject
+		Notes.md = Notes.md
+	EndProjectSection
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{BC879CA9-FA9E-4FD9-98AB-7DE111DDED21}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{BC879CA9-FA9E-4FD9-98AB-7DE111DDED21}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{BC879CA9-FA9E-4FD9-98AB-7DE111DDED21}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{BC879CA9-FA9E-4FD9-98AB-7DE111DDED21}.Release|Any CPU.Build.0 = Release|Any CPU
+		{858333B6-49DA-4C43-AE2F-1A2F74E633FA}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{858333B6-49DA-4C43-AE2F-1A2F74E633FA}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{858333B6-49DA-4C43-AE2F-1A2F74E633FA}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{858333B6-49DA-4C43-AE2F-1A2F74E633FA}.Release|Any CPU.Build.0 = Release|Any CPU
+		{CFD0E10D-AAC2-48C1-A16A-FA56A020C2D2}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{CFD0E10D-AAC2-48C1-A16A-FA56A020C2D2}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{CFD0E10D-AAC2-48C1-A16A-FA56A020C2D2}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{CFD0E10D-AAC2-48C1-A16A-FA56A020C2D2}.Release|Any CPU.Build.0 = Release|Any CPU
+		{E5018EE1-D5F8-4569-898B-B7E5A26953E5}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{E5018EE1-D5F8-4569-898B-B7E5A26953E5}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{E5018EE1-D5F8-4569-898B-B7E5A26953E5}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{E5018EE1-D5F8-4569-898B-B7E5A26953E5}.Release|Any CPU.Build.0 = Release|Any CPU
+		{9F03DC5B-7B20-4A0B-BCE6-E2D09DA4846B}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{9F03DC5B-7B20-4A0B-BCE6-E2D09DA4846B}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{9F03DC5B-7B20-4A0B-BCE6-E2D09DA4846B}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{9F03DC5B-7B20-4A0B-BCE6-E2D09DA4846B}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {AA0E4A8D-B81A-4574-8825-E7EEAC91511E}
+	EndGlobalSection
+EndGlobal

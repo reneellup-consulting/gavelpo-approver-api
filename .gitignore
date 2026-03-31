@@ -1,0 +1,44 @@
+# Build results
+[Dd]ebug/
+[Rr]elease/
+x64/
+x86/
+[Oo]bj/
+[Bb]in/
+[Nn]ode_modules/
+packages/
+*.lock.json
+
+# Visual Studio files
+*.suo
+*.user
+*.sln.docstates
+*.vsp
+*.vspx
+*.vssscc
+*.vspscc
+*.userprefs
+[Tt]humbs.db
+*.bak
+*.cache
+*.resharper
+*.resharper.user
+_ReSharper*/
+*.sln.ide
+
+# Build results
+*.apk
+*.ap_
+
+# Misc
+*.dll
+*.log
+*.tmp
+*.log4net
+*.ncrunch*
+*.dotCover
+*.mldb
+*.dbmdl
+*.vc.db
+*.csproj.user
+
